@@ -8,6 +8,6 @@
 
 #include "baseinfo.h"
 
-void addrecord();
+void addrecord(FILE *fp);
 
 #endif  

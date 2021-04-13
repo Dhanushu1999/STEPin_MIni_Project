@@ -8,6 +8,6 @@
 
 #include "baseinfo.h"
 
-void displayrecord();
+void displayrecord(FILE *fp);
 
 #endif  

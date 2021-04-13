@@ -16,11 +16,13 @@ void gotoxy(int x, int y)
 		cord);
 }
 
-FILE *fp, *ft;
+
 
 int main()
 {
+	FILE *fp, *ft;
 	int choice;
+	
 
 	// opening the file
 	fp = fopen("data.txt", "rb+");
@@ -87,25 +89,25 @@ int main()
 		case 1:
 
 			// Add the records
-			addrecord();
+			addrecord(fp);
 			break;
 
 		case 2:
 
 			// Delete the records
-			deleterecord();
+			deleterecord(fp);
 			break;
 
 		case 3:
 
 			// Display the records
-			displayrecord();
+			displayrecord(fp);
 			break;
 
 		case 4:
 
 			// Modify the records
-			modifyrecord();
+			modifyrecord(fp);
 			break;
 
 		case 5:

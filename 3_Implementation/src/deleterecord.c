@@ -6,11 +6,11 @@
 #include "baseinfo.h"
 #include "deleterecord.h"
 
-void deleterecord()
+void deleterecord(FILE *fp)
 {
 	struct emp e;
     long int size = sizeof(e);
-	FILE *fp,*ft;
+	FILE *ft;
 	system("cls");
 	char empname[50];
 	char another = 'y';

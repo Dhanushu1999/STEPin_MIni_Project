@@ -6,12 +6,10 @@
 #include "addrecord.h"
 #include "baseinfo.h"
 
-void addrecord()
+void addrecord(FILE *fp)
 {
 	struct emp e;
     long int size = sizeof(e);
-	FILE *fp;
-	system("cls");
 	fseek(fp, 0, SEEK_END);
 	char another = 'y';
 

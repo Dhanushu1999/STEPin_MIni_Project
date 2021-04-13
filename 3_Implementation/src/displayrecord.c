@@ -6,11 +6,10 @@
 #include "baseinfo.h"
 #include "displayrecord.h"
 
-void displayrecord()
+void displayrecord(FILE *fp)
 {
 	struct emp e;
     long int size = sizeof(e);
-	FILE *fp;
 	system("cls");
 
 	// sets pointer to start

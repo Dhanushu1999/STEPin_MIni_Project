@@ -6,12 +6,12 @@
 #include "baseinfo.h"
 #include "modifyrecord.h"
 
-void modifyrecord()
+void modifyrecord(FILE *fp)
 {
 	struct emp e;
     long int size = sizeof(e);
-	FILE *fp;
 	system("cls");
+
 	char empname[50];
 	char another = 'y';
 
