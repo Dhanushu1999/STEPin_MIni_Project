@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <windows.h>
 
 #include "addrecord.h"
 #include "baseinfo.h"
@@ -28,8 +27,7 @@ void addrecord(FILE *fp)
 
 		fwrite(&e, size, 1, fp);
 
-		printf("\nWant to add another"
-			" record (Y/N) : ");
+		printf("\nWant to add another record (Y/N) : ");
 		fflush(stdin);
 
 		scanf("%c", &another);

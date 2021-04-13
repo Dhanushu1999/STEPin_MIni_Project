@@ -1,20 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <windows.h>
+
+#include<errno.h>
 
 #include "recordmanagement.h"
-
-COORD cord = { 0, 0 };
-
-void gotoxy(int x, int y)
-{
-	cord.X = x;
-	cord.Y = y;
-	SetConsoleCursorPosition(
-		GetStdHandle(STD_OUTPUT_HANDLE),
-		cord);
-}
 
 
 
@@ -34,32 +24,19 @@ int main()
 		fp = fopen("data.txt", "wb+");
 		if (fp == NULL) 
 		{
-			printf("\nCannot open file...");
+			fprintf(stderr, "Error opening file: %s\n", strerror( errno ));
 			exit(1);
 		}
 	}
 
 	system("Color 0F");
-	printf("\n\n\n\n\t\t\t\t============="
-		"============================="
-		"===========");
-	printf("\n\t\t\t\t~~~~~~~~~~~~~~~~~~~"
-		"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-		"~~~~~");
-	printf("\n\t\t\t\t==================="
-		"============================="
-		"=====");
-	printf("\n\t\t\t\t[|:::>:::>:::>::> "
-		"EMPLOYEE RECORD <::<:::<:::"
-		"<:::|]\t");
-	printf("\n\t\t\t\t==================="
-		"============================="
-		"=====");
-	printf("\n\t\t\t\t~~~~~~~~~~~~~~~~~~~~"
-		"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-		"~~~");
-	printf("\n\t\t\t\t====================="
-		"==============================\n");
+	printf("\n\n\n\n\t\t=====================================================");
+	printf("\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+	printf("\n\t\t=====================================================");
+	printf("\n\t\t[|||||||||||||||| EMPLOYEE RECORD ||||||||||||||||]\t");
+	printf("\n\t\t=====================================================");
+	printf("\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+	printf("\n\t\t===================================================\n");
 
 	system("pause");
 
@@ -68,17 +45,11 @@ int main()
 		// Clearing console and asking the
 		// user for input
 		system("cls");
-		gotoxy(30, 10);
-		printf("\n1. ADD RECORD\n");
-		gotoxy(30, 12);
-		printf("\n2. DELETE RECORD\n");
-		gotoxy(30, 14);
-		printf("\n3. DISPLAY RECORDS\n");
-		gotoxy(30, 16);
-		printf("\n4. MODIFY RECORD\n");
-		gotoxy(30, 18);
-		printf("\n5. EXIT\n");
-		gotoxy(30, 20);
+		printf("\n [1]ADD RECORD\n");
+		printf("\n [2]DELETE RECORD\n");
+		printf("\n [3]DISPLAY RECORDS\n");
+		printf("\n [4]MODIFY RECORD\n");
+		printf("\n [5]EXIT\n");
 		printf("\nENTER YOUR CHOICE...\n");
 		fflush(stdin);
 		scanf("%d", &choice);
