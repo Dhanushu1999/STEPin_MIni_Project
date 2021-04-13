@@ -38,6 +38,6 @@ void deleterecord(FILE *fp)
 
 		printf("\nWant to delete another record (Y/N) :");
 		fflush(stdin);
-		another = getche();
+		another = getchar();
 	}
 }
