@@ -5,8 +5,12 @@
 #include "addrecord.h"
 #include "baseinfo.h"
 
-void addrecord(FILE *fp,struct  employee *emp)
+int addrecord(FILE *fp,struct  employee *emp)
 {
+	if((emp->age)!=0)
+	{
+		return 0;
+	}
 	//struct employee emp;
     long int size = sizeof(struct employee);
 	fseek(fp, 0, SEEK_END);

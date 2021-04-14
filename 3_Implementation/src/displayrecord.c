@@ -5,8 +5,12 @@
 #include "baseinfo.h"
 #include "displayrecord.h"
 
-void displayrecord(FILE *fp)
+int displayrecord(FILE *fp,int flag)
 {
+	if(flag==1)
+	{
+		return 0;
+	}
 	struct employee emp;
     long int size = sizeof(emp);
 	system("cls");

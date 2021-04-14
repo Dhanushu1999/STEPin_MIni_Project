@@ -5,8 +5,12 @@
 #include "baseinfo.h"
 #include "deleterecord.h"
 
-void deleterecord(FILE *fp)
+int deleterecord(FILE *fp,int flag)
 {
+	if(flag==1)
+	{
+		return 0;
+	}
 	struct employee emp;
     long int size = sizeof(emp);
 	FILE *ft;

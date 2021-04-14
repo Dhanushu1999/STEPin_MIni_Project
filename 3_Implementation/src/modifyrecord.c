@@ -5,8 +5,12 @@
 #include "baseinfo.h"
 #include "modifyrecord.h"
 
-void modifyrecord(FILE *fp)
+int modifyrecord(FILE *fp,int temp)
 {
+	if(temp!=1)
+	{
+		return 0;
+	}
 	struct employee emp;
     long int size = sizeof(emp);
 	system("cls");
