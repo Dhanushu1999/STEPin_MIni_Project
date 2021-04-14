@@ -7,14 +7,13 @@
 
 void modifyrecord(FILE *fp)
 {
-	struct emp e;
-    long int size = sizeof(e);
+	struct employee emp;
+    long int size = sizeof(emp);
 	system("cls");
-
 	char empname[50];
-	char another = 'y';
+	char contAnother = 'y';
 
-	while (another == 'y') 
+	while (contAnother == 'y') 
 	{
 		printf("\nEnter employee name to modify : ");
 		scanf("%s", empname);
@@ -22,23 +21,23 @@ void modifyrecord(FILE *fp)
 		rewind(fp);
 
 		// While File is open
-		while (fread(&e, size, 1, fp) == 1) 
+		while (fread(&emp, size, 1, fp) == 1) 
 		{
 			// Compare the employee name
 			// with ename
-			if (strcmp(e.name, empname) == 0) 
+			if (strcmp(emp.name, empname) == 0) 
 			{
 				printf("\nEnter new name:");
-				scanf("%s", e.name);
+				scanf("%s", emp.name);
 				printf("\nEnter new age :");
-				scanf("%d", &e.age);
+				scanf("%d", &emp.age);
 				printf("\nEnter new salary :");
-				scanf("%f", &e.salary);
+				scanf("%f", &emp.salary);
 				printf("\nEnter new EMP-ID :");
-				scanf("%d", &e.id);
+				scanf("%d", &emp.id);
 
 				fseek(fp, -size, SEEK_CUR);
-				fwrite(&e, size, 1, fp);
+				fwrite(&emp, size, 1, fp);
 				break;
 			}
 		}
@@ -46,7 +45,7 @@ void modifyrecord(FILE *fp)
 		// Ask for modifying another record
 		printf("\nWant to modify another record (Y/N) :");
 		fflush(stdin);
-		scanf("%c", &another);
+		scanf("%c", &contAnother);
 	}
 }
 

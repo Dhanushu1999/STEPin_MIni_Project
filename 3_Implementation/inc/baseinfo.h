@@ -6,7 +6,7 @@
 #define __BASEINFO_H__
 
 
-struct emp {
+struct employee {
 	char name[50];
 	float salary;
 	int age;

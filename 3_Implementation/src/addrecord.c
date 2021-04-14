@@ -7,29 +7,29 @@
 
 void addrecord(FILE *fp)
 {
-	struct emp e;
-    long int size = sizeof(e);
+	struct employee emp;
+    long int size = sizeof(emp);
 	fseek(fp, 0, SEEK_END);
-	char another = 'y';
+	char contAnother = 'y';
 
-	while (another == 'y') {
+	while (contAnother == 'y') {
 		printf("\nEnter Name : ");
-		scanf("%s", e.name);
+		scanf("%s", emp.name);
 
 		printf("\nEnter Age : ");
-		scanf("%d", &e.age);
+		scanf("%d", &emp.age);
 
 		printf("\nEnter Salary : ");
-		scanf("%f", &e.salary);
+		scanf("%f", &emp.salary);
 
 		printf("\nEnter EMP-ID : ");
-		scanf("%d", &e.id);
+		scanf("%d", &emp.id);
 
-		fwrite(&e, size, 1, fp);
+		fwrite(&emp, size, 1, fp);
 
 		printf("\nWant to add another record (Y/N) : ");
 		fflush(stdin);
 
-		scanf("%c", &another);
+		scanf("%c", &contAnother);
 	}
 }

@@ -1,9 +1,18 @@
+/**
+ * @file recordmanagement.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-11
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #include<errno.h>
-
 #include "recordmanagement.h"
 
 
@@ -11,7 +20,7 @@
 int main()
 {
 	FILE *fp, *ft;
-	int choice;
+	int user_choice;
 	
 
 	// opening the file
@@ -45,17 +54,17 @@ int main()
 		// Clearing console and asking the
 		// user for input
 		system("cls");
-		printf("\n [1]ADD RECORD\n");
-		printf("\n [2]DELETE RECORD\n");
-		printf("\n [3]DISPLAY RECORDS\n");
-		printf("\n [4]MODIFY RECORD\n");
-		printf("\n [5]EXIT\n");
+		printf("\n [1] ADD RECORD\n");
+		printf("\n [2] DELETE RECORD\n");
+		printf("\n [3] DISPLAY RECORDS\n");
+		printf("\n [4] MODIFY RECORD\n");
+		printf("\n [5] EXIT\n");
 		printf("\nENTER YOUR CHOICE...\n");
 		fflush(stdin);
-		scanf("%d", &choice);
+		scanf("%d", &user_choice);
 
 		// Switch Case
-		switch (choice) 
+		switch (user_choice) 
 		{
 		case 1:
 

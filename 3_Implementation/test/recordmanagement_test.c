@@ -7,7 +7,7 @@ void setUp(){}
 void tearDown(){}
 
 void test_addrecord(void) {
-  struct emp e = {"Add_user", "12345", "user1@email.com"};
+  struct employee e = {"Add_user", "12345", "user1@email.com"};
   TEST_ASSERT_EQUAL(0, add_contact(&e));
 }
 
@@ -18,8 +18,8 @@ void test_deleterecord(void) {
 }
 
 void test_modify_contact(void) {
-  struct emp e= {"Modify_User", "12345", "user1@email.com"};
-  struct emp e1 = {"Modified_User", "345", "new@email.com"};
+  struct employee e= {"Modify_User", "12345", "user1@email.com"};
+  struct employee e1 = {"Modified_User", "345", "new@email.com"};
   TEST_ASSERT_EQUAL(0, addrecord(&e));
   TEST_ASSERT_EQUAL(0, modifyrecord(e));
   TEST_ASSERT_EQUAL(0, deleterecord(e));

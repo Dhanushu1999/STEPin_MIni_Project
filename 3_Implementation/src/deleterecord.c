@@ -7,26 +7,25 @@
 
 void deleterecord(FILE *fp)
 {
-	struct emp e;
-    long int size = sizeof(e);
+	struct employee emp;
+    long int size = sizeof(emp);
 	FILE *ft;
 	system("cls");
 	char empname[50];
-	char another = 'y';
+	char contAnother = 'y';
 
-	while (another == 'y') 
+	while (contAnother == 'y') 
 	{
 		printf("\nEnter employee name to delete : ");
 		scanf("%s", empname);
 
 		ft = fopen("temp.txt", "wb");
 		rewind(fp);
-
-		while (fread(&e, size,1, fp)== 1)
+		while (fread(&emp, size,1, fp)== 1)
 		{
-			if (strcmp(e.name,empname)!= 0)
+			if (strcmp(emp.name,empname)!= 0)
 			{
-				fwrite(&e, size, 1, ft);
+				fwrite(&emp, size, 1, ft);
 			}
 		}
 
@@ -38,6 +37,6 @@ void deleterecord(FILE *fp)
 
 		printf("\nWant to delete another record (Y/N) :");
 		fflush(stdin);
-		another = getchar();
+		contAnother = getchar();
 	}
 }
