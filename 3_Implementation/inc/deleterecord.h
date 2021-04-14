@@ -8,6 +8,6 @@
 
 #include "baseinfo.h"
 
-void deleterecord(FILE *fp);
+int deleterecord(FILE *fp,int flag);
 
 #endif  

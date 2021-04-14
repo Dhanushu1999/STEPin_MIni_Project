@@ -8,6 +8,6 @@
 
 #include "baseinfo.h"
 
-void modifyrecord(FILE *fp);
+int modifyrecord(FILE *fp,int flag);
 
 #endif  

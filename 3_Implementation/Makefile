@@ -12,13 +12,22 @@ src/displayrecord.c\
 src/modifyrecord.c
 
 # All test source files
+TEST_SRC =src/addrecord.c\
+src/deleterecord.c\
+src/displayrecord.c\
+src/modifyrecord.c\
+test/recordmanagement_test.c\
+unity/unity.c\
+
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
 # All include folders with header files
 INC	= -Iinc\
 -Iunity\
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
-INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS =
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
@@ -44,6 +53,9 @@ doc:
 	make -C ./documentation
 
 # Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC)-o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
 
 
 # Remove all the built files, invoke by `make clean`

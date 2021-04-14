@@ -76,19 +76,19 @@ int main()
 		case 2:
 
 			// Delete the records
-			deleterecord(fp);
+			deleterecord(fp,0);
 			break;
 
 		case 3:
 
 			// Display the records
-			displayrecord(fp);
+			displayrecord(fp,0);
 			break;
 
 		case 4:
 
 			// Modify the records
-			modifyrecord(fp);
+			modifyrecord(fp,0);
 			break;
 
 		case 5:
