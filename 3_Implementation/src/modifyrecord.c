@@ -43,6 +43,10 @@ void modifyrecord(FILE *fp)
 				break;
 			}
 		}
+		if(flag!=1)
+		{
+			printf("Requested data does not exist\n");
+		}
 
 		// Ask for modifying another record
 		printf("\nWant to modify another record (Y/N) :");
