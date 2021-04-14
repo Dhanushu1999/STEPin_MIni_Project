@@ -21,7 +21,7 @@ int main()
 {
 	FILE *fp, *ft;
 	int user_choice;
-	
+	struct employee *emp = (struct employee *)calloc(1, sizeof(struct employee));
 
 	// opening the file
 	fp = fopen("data.txt", "rb+");
@@ -69,7 +69,8 @@ int main()
 		case 1:
 
 			// Add the records
-			addrecord(fp);
+			addrecord(fp,emp);
+			free(emp);
 			break;
 
 		case 2:

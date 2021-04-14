@@ -8,6 +8,6 @@
 
 #include "baseinfo.h"
 
-void addrecord(FILE *fp);
+void addrecord(FILE *fp,struct employee *emp);
 
 #endif  
