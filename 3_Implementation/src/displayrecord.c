@@ -15,7 +15,7 @@ void displayrecord(FILE *fp)
 	// of the file
 	rewind(fp);
 	printf("\n==========================================================");
-	printf("\nNAME\t\tAGE\t\tSALARY\t\t\tID\n",emp.name, emp.age,emp.salary, emp.id);
+	printf("\nNAME\t\tAGE\t\tSALARY\t\t\tID\n");
 	printf("==========================================================\n");
 
 	while (fread(&emp, size, 1, fp) == 1)
