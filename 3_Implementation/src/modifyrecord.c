@@ -12,6 +12,7 @@ void modifyrecord(FILE *fp)
 	system("cls");
 	char empname[50];
 	char contAnother = 'y';
+	int flag;
 
 	while (contAnother == 'y') 
 	{
@@ -27,6 +28,7 @@ void modifyrecord(FILE *fp)
 			// with ename
 			if (strcmp(emp.name, empname) == 0) 
 			{
+				flag=1;
 				printf("\nEnter new name:");
 				scanf("%s", emp.name);
 				printf("\nEnter new age :");

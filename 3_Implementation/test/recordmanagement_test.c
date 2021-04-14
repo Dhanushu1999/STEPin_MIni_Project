@@ -6,13 +6,14 @@ void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
 
+/*
 void test_addrecord(void) {
   struct employee e = {"Add_user", "12345", "user1@email.com"};
   TEST_ASSERT_EQUAL(0, add_contact(&e));
 }
 
 void test_deleterecord(void) {
-  struct emp e = {"Delete_user", "12345", "user1@email.com"};
+  struct employee e = {"Delete_user", "12345", "user1@email.com"};
   TEST_ASSERT_EQUAL(0, addrecord(&e));
   TEST_ASSERT_EQUAL(0, deleterecord(e));
 }
@@ -32,16 +33,18 @@ void test_displayrecord(void)
 
 int main(void)
 {
-/* Initiate the Unity Test Framework */
+ Initiate the Unity Test Framework
   UNITY_BEGIN();
 
-/* Run Test functions */
+ Run Test functions 
   RUN_TEST(test_addrecord);
   RUN_TEST(test_deleterecord);
   RUN_TEST(test_modifyrecord);
   RUN_TEST(test_searchrecord);
   RUN_TEST(test_displayrecord);
 
-  /* Close the Unity Test Framework */
+  /Close the Unity Test Framework 
   return UNITY_END();
 }
+
+*/

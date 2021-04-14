@@ -13,6 +13,7 @@ void deleterecord(FILE *fp)
 	system("cls");
 	char empname[50];
 	char contAnother = 'y';
+	int check;
 
 	while (contAnother == 'y') 
 	{
@@ -27,12 +28,24 @@ void deleterecord(FILE *fp)
 			{
 				fwrite(&emp, size, 1, ft);
 			}
+			if (strcmp(emp.name,empname)== 0)
+			{
+				check=1;
+			}
 		}
 
 		fclose(fp);
 		fclose(ft);
-		remove("data.txt");
-		rename("temp.txt", "data.txt");
+		if(check!=1)
+		{
+			remove("temp.txt");
+			printf("Requested data does not exist\n");
+		}
+		else
+		{
+			remove("data.txt");
+		    rename("temp.txt", "data.txt");
+		}
 		fp = fopen("data.txt", "rb+");
 
 		printf("\nWant to delete another record (Y/N) :");

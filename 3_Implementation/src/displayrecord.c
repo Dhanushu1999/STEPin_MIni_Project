@@ -11,10 +11,9 @@ void displayrecord(FILE *fp)
     long int size = sizeof(emp);
 	system("cls");
 
-	// sets pointer to start
+	// sets pointer to start5
 	// of the file
 	rewind(fp);
-
 	printf("\n==========================================================");
 	printf("\nNAME\t\tAGE\t\tSALARY\t\t\tID\n",emp.name, emp.age,emp.salary, emp.id);
 	printf("==========================================================\n");
@@ -24,7 +23,7 @@ void displayrecord(FILE *fp)
 		printf("\n%s\t\t%d\t\t%.2f\t%10d",emp.name, emp.age, emp.salary, emp.id);
 	}
 
-	printf("\n\n\n\t");
+	printf("\n\n\n\t");	
 	system("pause");
 }
 
