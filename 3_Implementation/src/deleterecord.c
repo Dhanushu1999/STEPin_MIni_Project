@@ -11,14 +11,16 @@ int deleterecord(FILE *fp,int flag)
 	{
 	    struct employee emp;
         long int size = sizeof(emp);
-	    FILE *ft;
 	    system("cls");
 	    char empname[50];
 	    char contAnother = 'y';
-	    int check;
+	    int check=0;
+		
 
 	    while (contAnother == 'y') 
 	    {
+			char ch;
+			FILE *ft;
 		    printf("\nEnter employee name to delete : ");
 		    scanf("%s", empname);
 
@@ -51,7 +53,7 @@ int deleterecord(FILE *fp,int flag)
 		    fp = fopen("data.txt", "rb+");
 
 		    printf("\nWant to delete another record (Y/N) :");
-		    fflush(stdin);
+		    while ((ch=(getchar()) )!= '\n');
 		    contAnother = getchar();
 	    }
 	}

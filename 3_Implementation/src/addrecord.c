@@ -13,9 +13,11 @@ int addrecord(FILE *fp,struct  employee *emp,int temp)
         long int size = sizeof(struct employee);
 	    fseek(fp, 0, SEEK_END);
 	    char contAnother = 'y';
+		
 
 	    while (contAnother == 'y') 
 		{
+			char ch;
 		    printf("\nEnter Name : ");
 		    scanf("%s", emp->name);
 
@@ -31,7 +33,7 @@ int addrecord(FILE *fp,struct  employee *emp,int temp)
 		    fwrite(emp, size, 1, fp);
 
 		    printf("\nWant to add another record (Y/N) : ");
-		    fflush(stdin);
+		    while ((ch=(getchar()) )!= '\n');
 
 		    scanf("%c", &contAnother);
 		}

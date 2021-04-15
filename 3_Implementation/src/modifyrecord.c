@@ -16,10 +16,12 @@ int modifyrecord(FILE *fp,int temp)
 	system("cls");
 	char empname[50];
 	char contAnother = 'y';
-	int flag;
+	int flag=0;
+	
 
 	while (contAnother == 'y') 
 	{
+		char ch;
 		printf("\nEnter employee name to modify : ");
 		scanf("%s", empname);
 
@@ -54,7 +56,7 @@ int modifyrecord(FILE *fp,int temp)
 
 		// Ask for modifying another record
 		printf("\nWant to modify another record (Y/N) :");
-		fflush(stdin);
+		while ((ch=(getchar()) )!= '\n');
 		scanf("%c", &contAnother);
 	}
 }

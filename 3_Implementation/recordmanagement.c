@@ -19,7 +19,7 @@
 
 int main()
 {
-	FILE *fp, *ft;
+	FILE *fp;
 	int user_choice;
 	struct employee *emp = (struct employee *)calloc(1, sizeof(struct employee));
 
