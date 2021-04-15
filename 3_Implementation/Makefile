@@ -54,9 +54,6 @@ coverage:${PROJECT_NAME}
 	$(RM) *.gcno
 	$(RM) *.c.gcov
 
-sanitize_check: $(SRC) $(TEST)
-	gcc $(INC) $(TEST) $(SRC) -o $(PROJ_NAME).out -fsanitize=address -static-libasan
-
 doc:
 	make -C doc
 $(BUILD_DIR):
