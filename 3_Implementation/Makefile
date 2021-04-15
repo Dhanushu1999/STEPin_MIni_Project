@@ -44,7 +44,7 @@ staticcheck:
 	cppcheck --enable=all $(SRC) recordmanagement.c
 
 memcheck:
-	valgrind ./$(PROJ_NAME)
+	valgrind ./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 sanitize_check:
 	gcc -fsanitize=address -fno-omit-frame-pointer $(SRC) -o $(PROJ_NAME)
