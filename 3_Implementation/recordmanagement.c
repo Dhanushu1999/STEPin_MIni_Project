@@ -51,14 +51,16 @@ int main()
 
 	while (1) 
 	{
-		// Clearing console and asking the
+		// Clearing console and asking the5
 		// user for input
 		system("cls");
-		printf("\n [1] ADD RECORD\n");
-		printf("\n [2] DELETE RECORD\n");
-		printf("\n [3] DISPLAY RECORDS\n");
-		printf("\n [4] MODIFY RECORD\n");
-		printf("\n [5] EXIT\n");
+		
+		//printf("\n 1. ADD RECORD\n");
+		printf("\n 1. ADD RECORD\n");
+		printf("\n 2. DELETE RECORD\n");
+		printf("\n 3. DISPLAY RECORDS\n");
+		printf("\n 4. MODIFY RECORD\n");
+		printf("\n 5. EXIT\n");
 		printf("\nENTER YOUR CHOICE...\n");
 		fflush(stdin);
 		scanf("%d", &user_choice);
