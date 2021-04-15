@@ -46,14 +46,16 @@ staticcheck:
 memcheck:
 	valgrind ./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
-sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(SRC) -o $(PROJ_NAME)
-	./$(PROJ_NAME)
-
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(SRC)
+	gcov -a recordmanagement_test.c
+	$(RM) *.gcda
+	$(RM) *.gcno
+	$(RM) *.c.gcov
+
+sanitize_check: $(SRC) $(TEST)
+	gcc $(INC) $(TEST) $(SRC) -o $(PROJ_NAME).out -fsanitize=address -static-libasan
 
 doc:
 	make -C doc
