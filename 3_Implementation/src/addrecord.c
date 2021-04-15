@@ -5,9 +5,9 @@
 #include "addrecord.h"
 #include "baseinfo.h"
 
-int addrecord(FILE *fp,struct  employee *emp)
+int addrecord(FILE *fp,struct  employee *emp,int temp)
 {
-	if((emp->age)!=0)
+	if(temp==1)
 	{
 		return 0;
 	}

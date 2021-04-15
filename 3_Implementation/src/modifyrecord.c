@@ -7,7 +7,7 @@
 
 int modifyrecord(FILE *fp,int temp)
 {
-	if(temp!=1)
+	if(temp==1)
 	{
 		return 0;
 	}

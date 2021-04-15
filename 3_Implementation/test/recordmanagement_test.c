@@ -11,7 +11,7 @@ FILE *fp;
 
 void test_addrecord(void) {
   struct employee emp = {"Addedrecord",11.0,10,10};
-  TEST_ASSERT_EQUAL(0, addrecord(fp,&emp));
+  TEST_ASSERT_EQUAL(0, addrecord(fp,&emp,1));
 }
 
 void test_displayrecord(void) 

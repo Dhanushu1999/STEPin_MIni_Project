@@ -69,7 +69,7 @@ int main()
 		case 1:
 
 			// Add the records
-			addrecord(fp,emp);
+			addrecord(fp,emp,0);
 			free(emp);
 			break;
 
