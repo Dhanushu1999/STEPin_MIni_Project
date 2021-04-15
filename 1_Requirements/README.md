@@ -17,8 +17,7 @@ ERS helps companies keep track of all the employees and their records. It is use
 - Cost effective.
 
 ## Cost and Features
-![Description](Link to Pic) As long as requirements are met the cost of project could be varied as per requirement.
--- Content 
+-As long as requirements are met the cost of project could be varied as per requirement.
 
 ## Defining Our System
 ### Architecture
