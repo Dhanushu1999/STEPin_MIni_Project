@@ -16,13 +16,22 @@ Folder             | Description
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`259035` | Dhanush U | Feature A, B etc    | X No     | X No   |X No   |X No     
-   
+`259035` | Dhanush U | Detailed in Requirements    | -    | -   |4   |4     
+
+## External Libraries Used
+*   [Unity](https://github.com/ThrowTheSwitch/Unity) from Throw The Switch as unit test framework
+
+## Project Dependencies
+
+1.  GCC
+2.  Make
+3.  Unittest
+
 ## Challenges Faced and How Was It Overcome
-1. ABC
-2. BCD
-3. ...
-4. ...
+1. Understanding of makefiles to link with code coverage,unit testing,static and dynamic analysis was a major issue mainly wrt including dependencies.
+2. Initially tracing and updating project when working with both OS seemed to be difficult and it was overcome with clear understanding of linkage between vs code and github.
+3.Github actions, github badges seemed difficult at first with help of study materials uploaded at futureskill platform and overcame the difficulties faced.
+
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)

@@ -67,5 +67,5 @@ ERS helps companies keep track of all the employees and their records. It is use
 |LR_01|The application must be able to execute irrespective of OS,provided with GCC compiler,makefile and Static and Dynamic code analysis       |Implemented            |
 |LR_02|Add record functionality wherein the user or admin can add the data of self which is then stored in File           |Implemented|
 |LR_03|Modify record which should be accessible by username and provision to change data   |Implemented|
-|LR_04|Display record to show modified/unmodified data when requested|Future|
-|LR_05|Delete record when the user leaves organization |Implemented|
+|LR_04|Delete record when the user leaves organization|Implemented|
+|LR_05|Display record to show modified/unmodified data when requested |Future|
