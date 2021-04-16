@@ -14,6 +14,9 @@ unity/unity.c\
 INC = -Iinc\
 -Iunity 
 
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
+
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
    RM = del /q
@@ -55,11 +58,8 @@ coverage:${PROJECT_NAME}
 	$(RM) *.c.gcov
 
 doc:
-	make -C doc
-$(BUILD_DIR):
-	mkdir $(BUILD_DIR) 
+	make -C ./documentation
 
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-	make clean -C doc
-	rmdir $(BUILD_DIR) doc/html
+	rm -rf $(DOCUMENTATION_OUTPUT)
