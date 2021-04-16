@@ -60,7 +60,7 @@ coverage:${PROJECT_NAME}
 doc:
 	make -C ./documentation
 $(BUILD):
-	mkdir build
+	mkdir Build
 
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
