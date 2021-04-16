@@ -15,6 +15,6 @@
 | Test ID | Description | Exp I/P | Exp O/P | Actual Out | Type of Test|
 |-|-|-|-|-|-|
 | L_01| Check if ID already  exist | Account ID,  File pointer| Redundancy removed        | PASS       | Technical    |
-| L_02    | Read actual input and avoid garbage data       | File pointer to  file.                   | Reduced most of garbage values being generated| Fail      | Technical    |
-| L_03    | While reading display no record found if no data exist                                | Incorrect data | Displayed required output       | Successful        | Requirement  |
-| L_04    | If Employee ID is not  present display a  message stating that  No Account can  be found.   | Employee nmae should  be provided.|  Dispaly all details  of particular  Employee name. | Successful        | Technical    |
+| L_02    | Read actual input and avoid garbage data       | File pointer to  file.                   | Reduced most of garbage values being generated| FAILED     | Technical    |
+| L_03    | While reading display no record found if no data exist                                | Incorrect data | Displayed required output       | PASS        | Requirement  |
+| L_04    | If Employee ID is not  present display a  message stating that  No Account can  be found.   | Employee nmae should  be provided.|  Dispaly all details  of particular  Employee name. | PASS       | Technical    |

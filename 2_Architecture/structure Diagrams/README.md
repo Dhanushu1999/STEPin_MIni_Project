@@ -9,4 +9,4 @@
 ### Low Level Design
 
 #### Flowchart
-![Flowchart](https://github.com/Dhanushu1999/STEPin_Mini_Project/blob/master/2_Architecture/structure%20Diagrams/flowchart.png)
+![Flowchart](https://github.com/Dhanushu1999/STEPin_Mini_Project/blob/main/2_Architecture/structure%20Diagrams/flowchart.png)
