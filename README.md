@@ -1,5 +1,9 @@
 # SDLC Activity Based Learning
 
+Build | Code Quality | Unity | Git Inspector
+|---------|------------|-----------|----------------
+[![C/C++ CI - Build Status](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/c-cpp.yml)|[![Code Quality - Static Code - Cppcheck](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/cppcheck.yml)[![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/CodeQuality_Dynamic.yml)[![CI-Coverage](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/gcov.yml/badge.svg)](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/gcov.yml)|[![Unit Testing - Unity](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/unity.yml/badge.svg)](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/unity.yml)|[![Contribution Check - Git Inspector](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Dhanushu1999/STEPin_Mini_Project/actions/workflows/gitinspector.yml)
+
 ## Folder Structure
 Folder             | Description
 -------------------| -----------------------------------------
