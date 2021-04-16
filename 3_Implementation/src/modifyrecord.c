@@ -30,8 +30,7 @@ int modifyrecord(FILE *fp,int temp)
 		// While File is open
 		while (fread(&emp, size, 1, fp) == 1) 
 		{
-			// Compare the employee name
-			// with ename
+			// Compare the employee name with ename
 			if (strcmp(emp.name, empname) == 0) 
 			{
 				flag=1;
