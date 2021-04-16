@@ -55,7 +55,7 @@ coverage:${PROJECT_NAME}
 	gcov -a recordmanagement_test.c 
 	$(RM) *.gcda
 	$(RM) *.gcno
-	$(RM) *.c.gcov
+	$(RM) *.c.gcov 
 
 doc:
 	make -C ./documentation
