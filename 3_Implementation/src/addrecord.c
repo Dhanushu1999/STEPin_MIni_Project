@@ -9,7 +9,7 @@ int addrecord(FILE *fp,struct  employee *emp,int temp)
 {
 	if(temp!=1)
 	{
-		//struct employee emp;
+		//struct employee emp ;
         long int size = sizeof(struct employee);
 	    fseek(fp, 0, SEEK_END);
 	    char contAnother = 'y';
