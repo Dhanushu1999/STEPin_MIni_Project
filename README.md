@@ -16,8 +16,7 @@ Folder             | Description
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`259035` | Dhanush U | Detailed in Requirements    | -    | -   |4   |4     
- 
+`259035` | Dhanush U | Detailed in Requirements    | -    | -   |4   |4      
 ## External Libraries Used
 *   [Unity](https://github.com/ThrowTheSwitch/Unity) from Throw The Switch as unit test framework
 
