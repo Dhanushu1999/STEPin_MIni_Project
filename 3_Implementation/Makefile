@@ -50,8 +50,8 @@ memcheck:
 	valgrind ./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC)) -lm
+	$(call FixPath,./$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a recordmanagement_test.c 
 	$(RM) *.gcda
 	$(RM) *.gcno
