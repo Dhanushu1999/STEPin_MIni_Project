@@ -44,7 +44,7 @@ test:
 	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 
 staticcheck:
-	cppcheck --enable=all $(SRC) recordmanagement.c
+	cppcheck --enable=all $(SRC) recordmanagement.c 
 
 memcheck:
 	valgrind ./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
