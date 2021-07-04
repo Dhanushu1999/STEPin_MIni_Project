@@ -16,7 +16,6 @@
 #include "recordmanagement.h"
 
 
-
 int main()
 {
 	FILE *fp;
