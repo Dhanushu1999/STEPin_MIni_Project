@@ -27,6 +27,7 @@ int main()
 
 	// showing error if file is
 	// unable to open.
+	//sub
 	if (fp == NULL) 
 	{
 		fp = fopen("data.txt", "wb+");
