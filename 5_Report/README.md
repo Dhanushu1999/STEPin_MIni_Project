@@ -3,7 +3,7 @@
 1. The Project is built on C,to run code in any environment it requires a gcc compier.
 2. Click [here](https://sourceforge.net/projects/mingw-w64/) to get gcc compier,and download one required by Host OS.
 3. Add path of gcc directory to “System Environment Path Variables”
-4. To check installation of gcc in system type "gcc --version" in cmd.
+4. To check installation of gcc in system type "gcc --version" in cmd .
 
 # Instruction for Installation
 
